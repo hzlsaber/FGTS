@@ -60,9 +60,9 @@ pip install -r requirements.txt
 
 We provide the training and validation sets used in this project for reproducibility:
 
-- [**Training Set**](https://drive.google.com/file/d/1hV5PqFD23JTVvqLMI6kKyb33LSsnY/view)
-- [**Validation Set**](https://drive.google.com/file/d/1cW_d7il4m01rwshlVIJFh0Cgu27B/view)
-- [**So-Fake-OOD Test Set (Reference)**](https://drive.google.com/file/d/1WycDUXQSszOwFypvL33dXgFL8pQY/view)
+- [**Training Set**](https://drive.google.com/file/d/1hV5PqFD23JTVvqLMI6kKyb33LSsnYHqS/view?usp=drive_link)
+- [**Validation Set**](https://drive.google.com/file/d/1cW_d7il4m01rwshlVIJFh0Cgu27BModF/view?usp=drive_link)
+- [**So-Fake-OOD Test Set (Reference)**](https://drive.google.com/file/d/1hV5PqFD23JTVvqLMI6kKyb33LSsnYHqS/view?usp=drive_link)
 
 For the remaining benchmarks, please download the test data from their **official project pages**:
 
