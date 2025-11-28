@@ -363,6 +363,7 @@ python linear_probe_with_fisher.py \
     --probe_checkpoint ./checkpoints/AIGCDetectionBenchmark/linear_probe.pth \
     --test_base_dir /path/to/AIGCDetectionBenchmark/test \
     --test_mode AIGCDetectionBenchmark \
+    --max_test_samples 6000 \
     --batch_size 32 \
     --output_dir ./results/eval_aigc
 ```
