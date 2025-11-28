@@ -121,7 +121,7 @@ def get_all_test_datasets(test_base_dir: str, test_mode: str = 'so-fake-ood') ->
 
     Args:
         test_base_dir: Test dataset base directory
-        test_mode: Test mode - 'so-fake-ood', 'GenImage_Tiny', or 'AIGCDetectionBenchmark'
+        test_mode: Test mode - 'so-fake-ood', 'GenImage', or 'AIGCDetectionBenchmark'
 
     Returns:
         List of dataset information, each element contains:
@@ -133,8 +133,8 @@ def get_all_test_datasets(test_base_dir: str, test_mode: str = 'so-fake-ood') ->
     test_base_dir = Path(test_base_dir)
     datasets = []
 
-    if test_mode == 'GenImage_Tiny':
-        # GenImage_Tiny mode: dataset/val/real and fake
+    if test_mode == 'GenImage':
+        # GenImage mode: dataset/val/real and fake
         for dataset_dir in sorted(test_base_dir.iterdir()):
             if not dataset_dir.is_dir():
                 continue
@@ -230,7 +230,7 @@ def resolve_dataset_paths(dataset_path: Path, category: Optional[str] = None, te
         real_dir = dataset_path / '0_real'
         fake_dir = dataset_path / '1_fake'
 
-        # If not found, try GenImage_Tiny naming (real/fake)
+        # If not found, try GenImage naming (real/fake)
         if not real_dir.exists():
             if (dataset_path / 'real').exists():
                 real_dir = dataset_path / 'real'
