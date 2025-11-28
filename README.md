@@ -268,7 +268,7 @@ bash train_linear_probe.sh
 
 ### Performance on Benchmark Datasets
 
-**Training Setup**: All linear probe models are trained with only **1,000 real + 1,000 single-source fake images**, then evaluated on **diverse unseen generators** (LDM, Stable Diffusion, DALL-E, Midjourney, Ideogram, etc.).
+**Training Setup**: All linear probe models are trained with only **1,000 real + 1,000 single-source fake images**, then evaluated on **diverse unseen generators** (Nano Banana, Imagen4, Midjourney, Ideogram, etc.).
 
 #### Training-Free Detection 
 
