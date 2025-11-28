@@ -9,13 +9,13 @@ TOKEN_STRATEGY="auto_fisher"  # Options: all, cls, reg, patch, cls+reg, top_fish
 TOP_K=1
 
 # Test dataset configuration
-TEST_MODE="so-fake-ood"  # Options: so-fake-ood, GenImage_Tiny, AIGCDetectionBenchmark
+TEST_MODE="so-fake-ood"  # Options: so-fake-ood, GenImage, AIGCDetectionBenchmark
 
 # Set TEST_BASE_DIR and TRAIN_FAKE_TYPE according to TEST_MODE
 # IMPORTANT: TRAIN_FAKE_TYPE should match the generator used in training-free test
 # Note: VAL_DATASET uses the same generator as TRAIN_DATASET
-if [ "$TEST_MODE" = "GenImage_Tiny" ]; then
-    TEST_BASE_DIR="/mnt/nas_d/zhenglin/GenImage_Tiny/1"
+if [ "$TEST_MODE" = "GenImage" ]; then
+    TEST_BASE_DIR="/mnt/nas_d/zhenglin/GenImage/1"
     TRAIN_FAKE_TYPE="1_fake_sd14"
 elif [ "$TEST_MODE" = "AIGCDetectionBenchmark" ]; then
     TEST_BASE_DIR="/mnt/nas_d/zhenglin/AIGCDetectionBenchmark/AIGCDetectionBenchMark/test"
@@ -119,10 +119,10 @@ echo "Completed training with custom indices. Results saved to: $OUTPUT_DIR_CUST
 # Example configurations for different test modes
 # ============================================================
 
-# For GenImage_Tiny dataset:
-# TEST_MODE="GenImage_Tiny"
-# TEST_BASE_DIR="/mnt/nas_d/zhenglin/GenImage_Tiny/1"
-# CATEGORY=""  # Not used for GenImage_Tiny mode
+# For GenImage dataset:
+# TEST_MODE="GenImage"
+# TEST_BASE_DIR="/mnt/nas_d/zhenglin/GenImage/1"
+# CATEGORY=""  # Not used for GenImage mode
 
 # For AIGCDetectionBenchmark dataset:
 # TEST_MODE="AIGCDetectionBenchmark"
