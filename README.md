@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 ### Training/Validation Data
 
-We use **ProGAN as the base generator** for training, with different fake types for each test benchmark:
+Following widely adopted conventions in image forensics (as seen in (CNNSpot)[https://github.com/PeterWang512/CNNDetection/tree/master]), we place all fake training data under the `ProGAN` directory purely for a consistent project structure.
 
 ```
 datasets/
