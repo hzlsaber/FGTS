@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Results and outputs
+results/
+*.log
+*.txt
+*.json
+*.npy
+*.pth
+*.pt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep structure, ignore actual data)
+datasets/train/*
+datasets/test/*
+!datasets/train/.gitkeep
+!datasets/test/.gitkeep
+!datasets/README.md
+
+# Checkpoints
+checkpoints/*
+!checkpoints/.gitkeep
