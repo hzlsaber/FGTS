@@ -134,13 +134,13 @@ def get_all_test_datasets(test_base_dir: str, test_mode: str = 'so-fake-ood') ->
     datasets = []
 
     if test_mode == 'GenImage':
-        # GenImage mode: dataset/val/real and fake
+        # GenImage mode: dataset/val/nature and ai
         for dataset_dir in sorted(test_base_dir.iterdir()):
             if not dataset_dir.is_dir():
                 continue
 
             val_dir = dataset_dir / 'val'
-            if val_dir.exists() and (val_dir / 'real').exists() and (val_dir / 'fake').exists():
+            if val_dir.exists() and (val_dir / 'nature').exists() and (val_dir / 'ai').exists():
                 datasets.append({
                     'name': dataset_dir.name,
                     'path': val_dir,  # Point to val directory
@@ -230,12 +230,12 @@ def resolve_dataset_paths(dataset_path: Path, category: Optional[str] = None, te
         real_dir = dataset_path / '0_real'
         fake_dir = dataset_path / '1_fake'
 
-        # If not found, try GenImage naming (real/fake)
+        # If not found, try GenImage naming (nature/ai)
         if not real_dir.exists():
-            if (dataset_path / 'real').exists():
-                real_dir = dataset_path / 'real'
-            if (dataset_path / 'fake').exists():
-                fake_dir = dataset_path / 'fake'
+            if (dataset_path / 'nature').exists():
+                real_dir = dataset_path / 'nature'
+            if (dataset_path / 'ai').exists():
+                fake_dir = dataset_path / 'ai'
 
     # Check other possible naming for fake directory
     if not fake_dir.exists():
