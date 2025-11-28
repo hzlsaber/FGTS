@@ -23,6 +23,9 @@ results/
 *.pth
 *.pt
 
+# Allow checkpoint files
+!checkpoints/**/*.pth
+
 # IDE
 .vscode/
 .idea/
@@ -41,6 +44,5 @@ datasets/test/*
 !datasets/test/.gitkeep
 !datasets/README.md
 
-# Checkpoints
-checkpoints/*
-!checkpoints/.gitkeep
+# Checkpoints (keep trained models)
+# checkpoints directory is for storing pretrained model weights
