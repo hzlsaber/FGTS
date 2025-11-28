@@ -296,13 +296,17 @@ bash train_linear_probe.sh
 
 We provide pretrained linear probe weights trained on the three benchmark datasets. All models use **DINOv3-ViT-7B** backbone with Fisher-guided token selection.
 
-### Download Links
+### Available Checkpoints
 
-| Benchmark | Training Data | Download | Performance (Acc/AUC) |
-|-----------|--------------|----------|----------------------|
-| **so-fake-ood** | 1K real + 1K LDM fake | [linear_probe.pth](#) | 87.53 / 95.27 |
-| **GenImage** | 1K real + 1K SD1.4 fake | [linear_probe.pth](#) | 91.83 / 97.88 |
-| **AIGCDetectionBenchmark** | 1K real + 1K ProGAN fake | [linear_probe.pth](#) | 92.45 / 97.67 |
+The pretrained weights are included in this repository under the `checkpoints/` directory:
+
+| Benchmark | Training Data | Checkpoint Path | Performance (Acc/AUC) |
+|-----------|--------------|-----------------|----------------------|
+| **so-fake-ood** | 1K real + 1K LDM fake | `checkpoints/so-fake-ood/linear_probe.pth` | 87.53 / 95.27 |
+| **GenImage** | 1K real + 1K SD1.4 fake | `checkpoints/GenImage/linear_probe.pth` | 91.83 / 97.88 |
+| **AIGCDetectionBenchmark** | 1K real + 1K ProGAN fake | `checkpoints/AIGCDetectionBenchmark/linear_probe.pth` | 92.45 / 97.67 |
+
+After cloning the repository, you can directly use these checkpoints without any additional downloads.
 
 ### Using Pretrained Weights
 
@@ -388,7 +392,7 @@ If you find this work useful, please consider citing:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
