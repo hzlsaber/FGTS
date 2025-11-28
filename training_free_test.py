@@ -130,7 +130,7 @@ def main():
     parser.add_argument('--test_category', type=str, default='car',
                        help='Test category')
     parser.add_argument('--test_mode', type=str, default='so-fake-ood',
-                       choices=['so-fake-ood', 'GenImage_Tiny', 'AIGCDetectionBenchmark'],
+                       choices=['so-fake-ood', 'GenImage', 'AIGCDetectionBenchmark'],
                        help='Test mode - affects directory structure expectations')
     parser.add_argument('--max_test', type=int, default=500,
                        help='Max test samples per class')
