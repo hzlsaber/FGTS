@@ -111,7 +111,7 @@ Perform deepfake detection **without any training** using feature centroids. Cho
 **For so-fake-ood (train with LDM):**
 ```bash
 python training_free_test.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --reference_dataset ./datasets/train/progan \
     --reference_category car \
     --reference_fake_type 1_fake_ldm \
@@ -127,7 +127,7 @@ python training_free_test.py \
 **For GenImage (train with SD1.4), we show [GenImage_Tiny](https://www.kaggle.com/datasets/yangsangtai/tiny-genimage) here for reference:**
 ```bash
 python training_free_test.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --reference_dataset ./datasets/train/progan \
     --reference_category car \
     --reference_fake_type 1_fake_sd14 \
@@ -142,7 +142,7 @@ python training_free_test.py \
 **For AIGCDetectionBenchmark (train with ProGAN):**
 ```bash
 python training_free_test.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --reference_dataset ./datasets/train/progan \
     --reference_category car \
     --reference_fake_type 1_fake \
@@ -168,7 +168,7 @@ Train a lightweight linear classifier with **1K real + 1K fake images**. Use mat
 **For so-fake-ood (train with LDM):**
 ```bash
 python linear_probe_with_fisher.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --train_dataset ./datasets/train/progan \
     --val_dataset ./datasets/val/progan \
     --train_category car \
@@ -190,7 +190,7 @@ python linear_probe_with_fisher.py \
 **For GenImage (train with SD1.4), we show [GenImage_Tiny](https://www.kaggle.com/datasets/yangsangtai/tiny-genimage) here for reference:**
 ```bash
 python linear_probe_with_fisher.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --train_dataset ./datasets/train/progan \
     --val_dataset ./datasets/val/progan \
     --train_category car \
@@ -211,7 +211,7 @@ python linear_probe_with_fisher.py \
 **For AIGCDetectionBenchmark (train with ProGAN only):**
 ```bash
 python linear_probe_with_fisher.py \
-    --model dinov3_vitl16 \
+    --model dinov3_vit_7b \
     --train_dataset ./datasets/train/progan \
     --val_dataset ./datasets/val/progan \
     --train_category car \
