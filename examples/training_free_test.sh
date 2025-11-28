@@ -111,25 +111,3 @@ echo "Zero-shot detection complete! Results saved to: $OUTPUT_DIR_FISHER"
 #     --batch_size 32 \
 #     --img_size 224 \
 #     --output_dir $OUTPUT_DIR_CUSTOM
-#
-# Note: Token indices must be valid for the model
-# - For ViT-S/16 (224x224): 0 (CLS) + 4 (register, if any) + 196 (14x14 patches) = 200 or 201 tokens total
-# - Token 0: CLS token
-# - Tokens 1-4: Register tokens (DINOv2/v3 models with registers)
-# - Remaining tokens: Patch tokens
-# You can find optimal token indices from Fisher score analysis or linear probe training
-
-
-# ============================================================
-# Example configurations for different test modes
-# ============================================================
-
-# For GenImage dataset:
-# TEST_MODE="GenImage"
-# TEST_BASE_DIR="/mnt/nas_d/zhenglin/GenImage/1"
-# CATEGORY=""  # Not used for GenImage mode
-
-# For AIGCDetectionBenchmark dataset:
-# TEST_MODE="AIGCDetectionBenchmark"
-# TEST_BASE_DIR="/mnt/nas_d/zhenglin/AIGCDetectionBenchmark/AIGCDetectionBenchMark/test"
-# CATEGORY=""  # Not used for AIGCDetectionBenchmark mode
