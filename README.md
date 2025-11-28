@@ -334,6 +334,7 @@ To use the pretrained weights for inference, use the `--probe_checkpoint` argume
 ```bash
 python linear_probe_with_fisher.py \
     --model dinov3_vit_7b \
+    --train_dataset ./datasets/train/progan \
     --probe_checkpoint ./checkpoints/so-fake-ood/linear_probe.pth \
     --test_base_dir ./datasets/test \
     --test_category car \
@@ -346,6 +347,7 @@ python linear_probe_with_fisher.py \
 ```bash
 python linear_probe_with_fisher.py \
     --model dinov3_vit_7b \
+    --train_dataset ./datasets/train/progan \
     --probe_checkpoint ./checkpoints/GenImage/linear_probe.pth \
     --test_base_dir /path/to/GenImage/1 \
     --test_mode GenImage \
@@ -357,6 +359,7 @@ python linear_probe_with_fisher.py \
 ```bash
 python linear_probe_with_fisher.py \
     --model dinov3_vit_7b \
+    --train_dataset ./datasets/train/progan \
     --probe_checkpoint ./checkpoints/AIGCDetectionBenchmark/linear_probe.pth \
     --test_base_dir /path/to/AIGCDetectionBenchmark/test \
     --test_mode AIGCDetectionBenchmark \
