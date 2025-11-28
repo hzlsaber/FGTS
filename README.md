@@ -150,6 +150,7 @@ python training_free_test.py \
     --test_mode AIGCDetectionBenchmark \
     --token_strategy auto_fisher \
     --top_k 10 \
+    --max_test 6000 \
     --batch_size 32 \
     --output_dir ./results/training_free_aigc
 ```
