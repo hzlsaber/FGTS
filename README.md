@@ -324,7 +324,6 @@ The pretrained weights are included in this repository under the `checkpoints/` 
 | **GenImage** | 1K real + 1K SD1.4 fake | `checkpoints/GenImage/linear_probe.pth` | 91.83 / 97.88 |
 | **AIGCDetectionBenchmark** | 1K real + 1K ProGAN fake | `checkpoints/AIGCDetectionBenchmark/linear_probe.pth` | 92.45 / 97.67 |
 
-After cloning the repository, you can directly use these checkpoints without any additional downloads.
 
 ### Using Pretrained Weights
 
