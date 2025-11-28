@@ -56,6 +56,24 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 
+### Download Data
+
+We provide the training and validation sets used in this project for reproducibility:
+
+- [**Training Set**](https://drive.google.com/file/d/1hV5PqFD23JTVvqLMI6kKyb33LSsnY/view)
+- [**Validation Set**](https://drive.google.com/file/d/1cW_d7il4m01rwshlVIJFh0Cgu27B/view)
+- [**So-Fake-OOD Test Set (Reference)**](https://drive.google.com/file/d/1WycDUXQSszOwFypvL33dXgFL8pQY/view)
+
+For the remaining benchmarks, please download the test data from their **official project pages**:
+
+- [**So-Fake-OOD**](https://github.com/hzlsaber/So-Fake)
+- [**GenImage**](https://github.com/GenImage-Dataset/GenImage)
+- [**AIGCDetectionBenchmark**](https://github.com/Ekko-zn/AIGCDetectBenchmark)
+
+⚠ After downloading, please reorganize the data into the required directory structure shown below before running any scripts.
+
+---
+
 ### Training/Validation Data
 
 Following widely adopted conventions in image forensics (as seen in [CNNSpot](https://github.com/PeterWang512/CNNDetection/tree/master)), we place all fake training data under the `ProGAN` directory purely for a consistent project structure.
