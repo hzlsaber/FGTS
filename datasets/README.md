@@ -2,7 +2,9 @@
 
 Please place your datasets here following the structure described in the main README.md
 
+```bash
 ## Structure:
+
 datasets/
 ├── train/
 │   └── [generator_name]/
@@ -14,3 +16,5 @@ datasets/
         └── [category]/
             ├── 0_real/
             └── 1_fake/
+```
+
