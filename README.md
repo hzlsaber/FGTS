@@ -1,5 +1,11 @@
 <div align="center">
 <h1> Rethinking Cross-Generator Image Forgery Detection through DINOv3 </h1>
+
+  <p align="center">
+    <a href='https://arxiv.org/abs/2511.22471'>
+      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&logoColor=green' alt='arXiv PDF'> </a>
+  </p>
+        
 </div>
 
 
@@ -404,11 +410,14 @@ FGTS/
 If you find this work useful, please consider citing:
 
 ```bibtex
-@article{your_paper,
-  title={FGTS: Fisher-Guided Token Selection for Deepfake Detection},
-  author={Your Name},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+@misc{huang2025rethinkingcrossgeneratorimageforgery,
+      title={Rethinking Cross-Generator Image Forgery Detection through DINOv3}, 
+      author={Zhenglin Huang and Jason Li and Haiquan Wen and Tianxiao Li and Xi Yang and Lu Qi and Bei Peng and Xiaowei Huang and Ming-Hsuan Yang and Guangliang Cheng},
+      year={2025},
+      eprint={2511.22471},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.22471}, 
 }
 ```
 
