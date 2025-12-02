@@ -5,7 +5,7 @@
 MODEL="dinov3_vit_7b"
 TRAIN_GENERATOR="progan"  # Options: progan, ldm, sd14
 CATEGORY="car"
-TOKEN_STRATEGY="auto_fisher"  # Options: all, cls, reg, patch, cls+reg, top_fisher, auto_fisher
+TOKEN_STRATEGY="auto_fisher"  
 TOP_K=1
 
 # Test dataset configuration
