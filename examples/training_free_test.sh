@@ -32,24 +32,8 @@ OUTPUT_DIR="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_training_free"
 OUTPUT_DIR_FISHER="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_training_free_fisher"
 OUTPUT_DIR_CUSTOM="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_training_free_custom"
 
-# Mode 1: Standard token strategies (all, cls, reg, patch, cls+reg)
-# Run zero-shot detection
-# python ../training_free_test.py \
-#     --model $MODEL \
-#     --reference_dataset $REFERENCE_DATASET \
-#     --reference_category $CATEGORY \
-#     --reference_fake_type $REFERENCE_FAKE_TYPE \
-#     --test_base_dir $TEST_BASE_DIR \
-#     --test_category $CATEGORY \
-#     --test_mode $TEST_MODE \
-#     --token_strategy $TOKEN_STRATEGY \
-#     --max_reference 1000 \
-#     --max_test 500 \
-#     --batch_size 32 \
-#     --img_size 224 \
-#     --output_dir $OUTPUT_DIR
 
-# Mode 2: Auto Fisher mode (automatically compute Fisher scores and select top-k patch tokens)
+# Mode 1: Auto Fisher mode (automatically compute Fisher scores and select top-k patch tokens)
 # This mode:
 # 1. Computes Fisher scores on reference data
 # 2. Automatically filters out CLS and register tokens
@@ -72,7 +56,7 @@ CUDA_VISIBLE_DEVICES="1" python ../training_free_test.py \
 
 echo "Zero-shot detection complete! Results saved to: $OUTPUT_DIR_FISHER"
 
-# Mode 3: Use pre-computed Fisher scores
+# Mode 2: Use pre-computed Fisher scores
 # If you already have Fisher scores from linear probe training:
 # FISHER_SCORES="./results/linear_probe_example/fisher_scores.npy"
 # python ../training_free_test.py \
@@ -92,7 +76,7 @@ echo "Zero-shot detection complete! Results saved to: $OUTPUT_DIR_FISHER"
 #     --img_size 224 \
 #     --output_dir $OUTPUT_DIR_CUSTOM
 
-# Mode 4: Custom token indices
+# Mode 3: Custom token indices
 # Manually specify which token indices to use
 # This is useful when you want to test specific tokens identified from previous experiments
 # Example: Use tokens 187, 200, 18, 5 (comma-separated list)
