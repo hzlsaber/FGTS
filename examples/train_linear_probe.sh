@@ -35,27 +35,8 @@ MAX_VAL_SAMPLES=500
 OUTPUT_DIR_FISHER="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_linear_probe_fisher"
 OUTPUT_DIR="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_linear_probe"
 OUTPUT_DIR_CUSTOM="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_linear_probe_custom"
-# Mode 1: Standard token strategies (all, cls, reg, patch, cls+reg)
-# Train linear probe with all tokens
 
-# python ../linear_probe_with_fisher.py \
-#     --model $MODEL \
-#     --train_dataset $TRAIN_DATASET \
-#     --train_category $CATEGORY \
-#     --train_fake_type $TRAIN_FAKE_TYPE \
-#     --test_base_dir $TEST_BASE_DIR \
-#     --test_category $CATEGORY \
-#     --test_mode $TEST_MODE \
-#     --token_strategy all \
-#     --max_train_samples 1000 \
-#     --max_test_samples 500 \
-#     --num_epochs 50 \
-#     --lr 0.01 \
-#     --batch_size 32 \
-#     --img_size 224 \
-#     --output_dir $OUTPUT_DIR
-
-# Mode 2: Auto Fisher mode (automatically compute Fisher scores and select top-k patch tokens)
+# Mode 1: Auto Fisher mode (automatically compute Fisher scores and select top-k patch tokens)
 # This mode:
 # 1. Computes Fisher scores on training data
 # 2. Automatically filters out CLS and register tokens
@@ -82,7 +63,7 @@ OUTPUT_DIR_CUSTOM="../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_linear_pro
 #     --output_dir "../results/${MODEL}_${TOKEN_STRATEGY}_${TEST_MODE}_linear_probe_fisher"
 # echo "Training complete! Results saved to: $OUTPUT_DIR_FISHER"
 
-# Mode 3: Use pre-computed Fisher scores
+# Mode 2: Use pre-computed Fisher scores
 # If you already have Fisher scores from previous training:
 # FISHER_SCORES="./results/previous_run/fisher_scores.npy"
 
