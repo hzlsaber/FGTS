@@ -303,7 +303,7 @@ bash train_linear_probe.sh
 | DINOv3-ViT-B16 |60.71/65.02 |47.17/46.02 |66.48/76.87 |
 | DINOv3-ViT-L16 |72.08/78.75 |61.83/68.61 |64.30/82.04 |
 | DINOv3-ViT-H16 |73.36/82.57 |81.54/84.39 |67.97/84.03 |
-| DINOv3-ViT-7B |**75.06/89.32** |**86.77/94.09** |**78.99/94.80** |
+| DINOv3-ViT-7B |**75.06/89.32** |**88.21/94.09** |**78.99/94.80** |
 
 #### Linear Probe (Trained on 2K Images)
 
@@ -313,7 +313,7 @@ bash train_linear_probe.sh
 | DINOv3-ViT-B16 |70.31/77.95 |56.53/59.32 |70.38/81/32 |
 | DINOv3-ViT-L16 |76.55/84.37 |70.13/78.64 |72.92/91.30 |
 | DINOv3-ViT-H16 |77.81/88.03 |73.87/88.19 |80.45/94.82 |
-| DINOv3-ViT-7B |**87.53/95.27** |**91.83/97.88** |**92.45/97.67** |
+| DINOv3-ViT-7B |**87.53/95.27** |**92.63/97.88** |**92.45/97.67** |
 
 *Note: Metrics shown as Accuracy / AUC-ROC. All results demonstrate **strong cross-generator generalization** despite minimal training data.*
 
