@@ -328,7 +328,7 @@ The pretrained weights are included in this repository under the `checkpoints/` 
 | Benchmark | Training Data | Checkpoint Path | Performance (Acc/AUC) |
 |-----------|--------------|-----------------|----------------------|
 | **so-fake-ood** | 1K real + 1K LDM fake | `checkpoints/so-fake-ood/linear_probe.pth` | 87.53 / 95.27 |
-| **GenImage** | 1K real + 1K SD1.4 fake | `checkpoints/GenImage/linear_probe.pth` | 91.83 / 97.88 |
+| **GenImage** | 1K real + 1K SD1.4 fake | `checkpoints/GenImage/linear_probe.pth` | 92.63 / 97.88 |
 | **AIGCDetectionBenchmark** | 1K real + 1K ProGAN fake | `checkpoints/AIGCDetectionBenchmark/linear_probe.pth` | 92.45 / 97.67 |
 
 
