@@ -6,7 +6,7 @@ MODEL="dinov3_vits16"
 TRAIN_GENERATOR="progan"  # Options: progan, ldm, sd14
 REFERENCE_DATASET="../datasets/train/${TRAIN_GENERATOR}"
 CATEGORY="car"
-TOKEN_STRATEGY="all"  # Options: all, cls, reg, patch, cls+reg, top_fisher, auto_fisher, custom_indices
+TOKEN_STRATEGY="all"  
 
 # Test dataset configuration
 TEST_MODE="AIGCDetectionBenchmark"  # Options: so-fake-ood, GenImage, AIGCDetectionBenchmark
